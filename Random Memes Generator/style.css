@@ -38,6 +38,7 @@ body{
     text-transform: capitalize;
     color: #737081;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .container button{
