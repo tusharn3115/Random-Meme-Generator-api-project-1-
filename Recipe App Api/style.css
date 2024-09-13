@@ -91,7 +91,8 @@ nav form button:hover{
 
 .recipe img{
     height: 300px;
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .recipe h3{
@@ -108,7 +109,8 @@ nav form button:hover{
     font-size: 15px;
     font-weight: 600;
     padding: 10px;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
     border: none;
     background-color: #734060;
