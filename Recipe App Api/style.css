@@ -122,3 +122,19 @@ nav form button:hover{
 .recipe button:hover{
     background-color: #ad3092;
 }
+
+
+/* pop-up function */
+.recipe-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #DDC5D8;
+    color: #72114f;
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 17px;
+}

@@ -1,6 +1,8 @@
 const searchBox = document.querySelector("#searchBox");
 const searchButton = document.querySelector("#searchBtn");
 const recipeContainer = document.querySelector(".recipe-container");
+const recipeDetailsContent = document.querySelector(".recipe-details-content");
+const closeBtn = document.querySelector(".closeBtn");
 
 
 // getting recipes
@@ -35,10 +37,45 @@ const getRecipes = async(input) => {
         button.textContent = "View Recipe";
         showRecipe.appendChild(button);
 
+        // adding event listner to the recent clicked dish and showing the recipe as the pop-up using the openRecipePopup() function.
+        button.addEventListener('click', () => {
+            openRecipePopup(meal);
+        })
+
         // adding the recipe details with photo into the recipeContainer 
         recipeContainer.appendChild(showRecipe);
     });
 }
+
+
+// ingredients display function
+const showIngredients = (meal) => {
+    let ingredientsList = "";
+    for(let i = 1; i <= 20; i++){
+        const ingredient = meal[`strIngredient${i}`];
+        if(ingredient) {
+            const measure = meal[`strMeasure${i}`];
+            ingredientsList += `<li>${measure} ${ingredient}</li>`
+        }else {
+            break;
+        }
+    }
+    return ingredientsList;
+}
+
+
+
+
+// pop-up function logic
+const openRecipePopup = (meal) => {
+    recipeDetailsContent.innerHTML = `
+    <h2>${meal.strMeal}</h2>
+    <h3>Ingredients: </h3>
+    <ul>${showIngredients}</ul>
+    `
+    recipeDetailsContent.parentElement.style.display = "block";
+}
+
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();    // stoped for auto-submission
     const searchInput = searchBox.value.trim();
