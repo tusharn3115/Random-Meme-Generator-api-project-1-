@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.welcome{
+    background-color: #734060;
+    color: #DDC5D8;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.welcome p{
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1{
+    padding-left: 35px;
+    text-transform: capitalize;
+    font-size: 1.7em;
+    color: #72114f;
+}
+
+nav form{
+    padding-right: 35px;
+}
+
+nav form input{
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-color: #734060;
+}
+
+nav form button{
+    padding: 11px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #734060;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+nav form button:hover{
+    background-color: #ad3092;
+    
+}
+
+.recipe-container{
+    margin-top: 60px;
+    display: flex;
+    font-size: 0.9em;
+    align-items: center;
+    justify-content: center;
+    color: #72114f;
+}
