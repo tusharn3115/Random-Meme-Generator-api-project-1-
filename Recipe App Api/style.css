@@ -63,9 +63,7 @@ nav form button:hover{
 
 .recipe-container{
     margin-top: 60px;
-    display: flex;
     font-size: 0.9em;
-    align-items: center;
-    justify-content: center;
     color: #72114f;
+    text-align: center;
 }
