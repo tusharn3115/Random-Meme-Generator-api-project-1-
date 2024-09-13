@@ -6,12 +6,16 @@ const recipeContainer = document.querySelector(".recipe-container");
 // getting recipes
 const getRecipes = async(input) => {
 
+    recipeContainer.innerHTML = "<h2>Finding you the best recipes...</h2>";
+
     // return promise
     const data = await fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${input}`);
 
     // convert into JSON format
     const response = await data.json();
     // console.log(response.meals[0]);
+
+    recipeContainer.innerHTML = "";
 
     response.meals.forEach(meal => {
         // console.log(meal);

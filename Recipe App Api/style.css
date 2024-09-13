@@ -66,4 +66,6 @@ nav form button:hover{
     font-size: 0.9em;
     color: #72114f;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
