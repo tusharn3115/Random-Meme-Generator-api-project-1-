@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    scrollbar-width: thin;
 }
 
 .welcome{
@@ -68,4 +69,25 @@ nav form button:hover{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 25px;
+}
+
+
+
+/* js html styling */
+
+.mealImg{
+    border-radius: 8px;
+    object-fit: contain;
+    width: 80%;
+}
+
+.recipe{
+    background-color: #fff;
+    /* display: flex;
+    flex-direction: column; */
+    cursor: pointer;
 }
