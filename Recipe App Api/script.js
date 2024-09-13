@@ -48,10 +48,10 @@ const getRecipes = async(input) => {
 }
 
 
-// ingredients display function
+// ingredients display logic function
 const showIngredients = (meal) => {
     let ingredientsList = "";
-    for(let i = 1; i <= 20; i++){
+    for (let i = 1; i <= 20; i++) {
         const ingredient = meal[`strIngredient${i}`];
         if(ingredient) {
             const measure = meal[`strMeasure${i}`];
@@ -71,7 +71,7 @@ const openRecipePopup = (meal) => {
     recipeDetailsContent.innerHTML = `
     <h2>${meal.strMeal}</h2>
     <h3>Ingredients: </h3>
-    <ul>${showIngredients}</ul>
+    <ul>${showIngredients(meal)}</ul>
     `
     recipeDetailsContent.parentElement.style.display = "block";
 }
