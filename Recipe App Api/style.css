@@ -58,8 +58,7 @@ nav form button{
 }
 
 nav form button:hover{
-    background-color: #ad3092;
-    
+    background-color: #ad3092;  
 }
 
 .recipe-container{
@@ -81,15 +80,18 @@ nav form button:hover{
 /* js html styling */
 
 .recipe{
-    background-color: #fff;
+    /* background-color: #DDC5D8; */
     display: flex;
     flex-direction: column;
     cursor: pointer;
     max-width: 350px;
+    border: 2px solid #734060;
+    border-radius: 8px;
 }
 
 .recipe img{
     height: 300px;
+    border-radius: 6px;
 }
 
 .recipe h3{
@@ -100,4 +102,21 @@ nav form button:hover{
 .recipe p{
     font-size: 17px;
     margin-top: 6px;
+}
+
+.recipe button{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #734060;
+    color: #fff;
+    margin-top: 10px;
+    transition: ease-in-out 0.2s;
+}
+
+.recipe button:hover{
+    background-color: #ad3092;
 }
