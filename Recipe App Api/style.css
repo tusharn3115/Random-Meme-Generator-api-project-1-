@@ -73,21 +73,31 @@ nav form button:hover{
     width: 80%;
     margin: 10px auto;
     padding: 25px;
+    place-items: center;
 }
 
 
 
 /* js html styling */
 
-.mealImg{
-    border-radius: 8px;
-    object-fit: contain;
-    width: 80%;
-}
-
 .recipe{
     background-color: #fff;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
+    max-width: 350px;
+}
+
+.recipe img{
+    height: 300px;
+}
+
+.recipe h3{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.recipe p{
+    font-size: 17px;
+    margin-top: 6px;
 }

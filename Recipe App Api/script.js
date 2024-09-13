@@ -24,12 +24,17 @@ const getRecipes = async(input) => {
         const showRecipe = document.createElement('div');
         showRecipe.classList.add('recipe');
         showRecipe.innerHTML = `
-          <img src="${meal.strMealThumb}" class="mealImg">
+          <img src="${meal.strMealThumb}"/>
           <h3>${meal.strMeal}</h3> 
-          <p>${meal.strArea}</p> 
-          <p>${meal.strCategory}</p> 
+          <p>${meal.strArea} Dish</p> 
+          <p>${meal.strCategory} Category</p> 
         `
-        
+
+        // added button to view the recipes
+        const button = document.createElement("button");
+        button.textContent = "View Recipe";
+        showRecipe.appendChild(button);
+
         // adding the recipe details with photo into the recipeContainer 
         recipeContainer.appendChild(showRecipe);
     });
