@@ -137,6 +137,8 @@ nav form button:hover{
     width: 40%;
     height: 60%;
     font-size: 17px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
 }
 
 .recipe-details-content h2{

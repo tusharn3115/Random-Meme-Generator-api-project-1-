@@ -45,7 +45,7 @@ const getRecipes = async(input) => {
         // adding the recipe details with photo into the recipeContainer 
         recipeContainer.appendChild(showRecipe);
     });
-}
+};
 
 
 // ingredients display logic function
@@ -61,7 +61,7 @@ const showIngredients = (meal) => {
         }
     }
     return ingredientsList;
-}
+};
 
 
 
@@ -72,9 +72,17 @@ const openRecipePopup = (meal) => {
     <h2>${meal.strMeal}</h2>
     <h3>Ingredients: </h3>
     <ul>${showIngredients(meal)}</ul>
+    <div class="recipeInstructions">
+      <h3>Instructions: </h3>
+      <p class="instructions">${meal.strInstructions}</p>
+    </div>
     `
     recipeDetailsContent.parentElement.style.display = "block";
-}
+};
+
+closeBtn.addEventListener('click', () => {
+    recipeDetailsContent.parentElement.style.display = "none"
+});
 
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();    // stoped for auto-submission
