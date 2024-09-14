@@ -87,5 +87,9 @@ closeBtn.addEventListener('click', () => {
 searchButton.addEventListener('click', (e) => {
     e.preventDefault();    // stoped for auto-submission
     const searchInput = searchBox.value.trim();
+    if(!searchInput){
+        recipeContainer.innerHTML = `<h2>Please provide the meal you want to search...</h2>`;
+        return;
+    }
     getRecipes(searchInput);
 })
