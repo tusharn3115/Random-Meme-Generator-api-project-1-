@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+    outline: none;
+    border: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 85%;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: #a0daf0;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: 0.2s ease-in-out;
+}
+
+.search-box input:hover{
+    background-color: #6daec7;
+}
+
+.search-box input::placeholder{
+    color: #111;
+}
+
+.search-box button{
+    width: 40px;
+    height: 40px;
+    background-color: #a0daf0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.search-box button:hover{
+    background-color: #6daec7;
+}
